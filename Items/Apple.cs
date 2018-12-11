@@ -11,8 +11,8 @@ namespace SucculentMod.Items
 			Tooltip.SetDefault("Una manzana muy deliciosa.");
 		}
 		public override void SetDefaults()
-		{ 
-            item.CloneDefaults(ItemID.CandyApple);
+		{
+		    item.CloneDefaults(ItemID.CandyApple);
 		    item.maxStack = 200;
 		    item.healLife = 5;
 		}
