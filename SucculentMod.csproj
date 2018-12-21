@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,14 +33,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="obj\**\*.*" />
-    <Compile Include="Items\ApplePie.cs" />
-    <Compile Include="Items\CookedMeat.cs" />
-    <Compile Include="Items\RawMeat.cs" />
-    <Compile Include="SucculentModNPC.cs" />
-    <Compile Include="SucculentModTile.cs" />
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -62,6 +55,28 @@
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buffs\Empty.cs" />
+    <Compile Include="Buffs\Satisfied.cs" />
+    <Compile Include="Items\Apple.cs" />
+    <Compile Include="Items\ApplePie.cs" />
+    <Compile Include="Items\CookedMeat.cs" />
+    <Compile Include="Items\RawMeat.cs" />
+    <Compile Include="SucculentMod.cs" />
+    <Compile Include="SucculentModNPC.cs" />
+    <Compile Include="SucculentModPlayer.cs" />
+    <Compile Include="SucculentModTile.cs" />
+    <Compile Include="UI\HungryStatusUI.cs" />
+    <Compile Include="Utilities\IsEven.cs" />
+    <Compile Include="Utilities\IsOdd.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Items\Apple.png" />
+    <Content Include="Items\ApplePie.png" />
+    <Content Include="Items\CookedMeat.png" />
+    <Content Include="Items\RawMeat.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>"C:\Program Files (x86)\Steam\steamapps\common\terraria\tModLoaderServer.exe" -build "$(ProjectDir)\" -eac "$(TargetPath)"</PostBuildEvent>

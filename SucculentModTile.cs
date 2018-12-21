@@ -10,7 +10,7 @@ namespace SucculentMod
         {
             if (type == TileID.Trees)
             {
-                Item.NewItem(i * 16, (j - 5) * 16, 32, 32, mod.ItemType("Apple"), Main.rand.Next(1, 3));
+                Item.NewItem(i * 16, (j - 5) * 16, 32, 32, mod.ItemType("Apple"), Main.rand.Next(0, 2));
             }
 
             return base.Drop(i, j, type);
