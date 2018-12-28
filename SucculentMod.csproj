@@ -69,12 +69,8 @@
     <Compile Include="UI\HungryStatusUI.cs" />
     <Compile Include="Utilities\IsEven.cs" />
     <Compile Include="Utilities\IsOdd.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Items\Apple.png" />
-    <Content Include="Items\ApplePie.png" />
-    <Content Include="Items\CookedMeat.png" />
-    <Content Include="Items\RawMeat.png" />
+	<Compile Include="Items\Chocolate.cs" />
+	<Compile Include="Items\ChocolateBar.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
