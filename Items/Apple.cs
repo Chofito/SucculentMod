@@ -24,7 +24,7 @@ namespace SucculentMod.Items
 		    item.useTime = 20;
 		    item.UseSound = SoundID.Item2;
 		    item.consumable = true;
-		    item.healLife = 1;
+		    item.healLife = 2;
 		    item.value = Item.sellPrice(0, 0, 0, 5);
 		}
 	}
