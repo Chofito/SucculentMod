@@ -7,7 +7,6 @@ namespace SucculentMod.Items
 {
     public class ChocolateBar : ModItem
     {
-        //aqui no se puede usar var
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Barra de chocolate");
@@ -28,20 +27,21 @@ namespace SucculentMod.Items
             item.useTime = 20;
             item.UseSound = SoundID.Item2;
             item.consumable = true;
+            item.healLife = 100;
+            item.healMana = 100;
             item.value = Item.sellPrice(10, 50, 0, 0);
+
         }
 
         public override void AddRecipes()
         {
-            // ModRecipe recipe = new ModRecipe(mod);
-            var recipe = new ModRecipe(mod); // aqui creamos un OBJETO que permite añadir recetas, como parametro recibe MOD, que indica que la receta es propia de este mod
-            recipe.AddIngredient(mod.ItemType<Chocolate>(), 5); // aqui añadis un ingrediente, le envias el ingrediente y la cantidad
-            // todas esas formas son correctas, Tile es para indicar que tiene que tener cerca tu personaje para pdoer crear el item
+            var recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod.ItemType<Chocolate>(), 5); 
 
-            recipe.AddTile(TileID.Furnaces); // TileID es para hacer referencia a un Tile/objeto de terraria, en este caso es la forja
-            recipe.AddTile(TileID.WorkBenches); // y aqui esta la mesa de trabajo, luego añadiremos alguna especia de cocina xd
+            recipe.AddTile(TileID.Furnaces); 
+            recipe.AddTile(TileID.WorkBenches); 
 
-            recipe.AddRecipe(); // y este metodo añade la receta
+            recipe.AddRecipe(); 
         }
     }
 }

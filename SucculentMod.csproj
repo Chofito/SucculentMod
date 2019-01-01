@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8298EAB6-0586-4BDA-9483-83624B66B13A}</ProjectGuid>
+    <ProjectGuid>{D94101A6-FA25-4C2B-9CA3-DC65B312E558}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SucculentMod</RootNamespace>
@@ -60,6 +60,8 @@
     <Compile Include="Buffs\Satisfied.cs" />
     <Compile Include="Items\Apple.cs" />
     <Compile Include="Items\ApplePie.cs" />
+    <Compile Include="Items\Chocolate.cs" />
+    <Compile Include="Items\ChocolateBar.cs" />
     <Compile Include="Items\CookedMeat.cs" />
     <Compile Include="Items\RawMeat.cs" />
     <Compile Include="SucculentMod.cs" />
